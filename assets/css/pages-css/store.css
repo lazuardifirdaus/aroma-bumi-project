@@ -1,0 +1,43 @@
+.content {
+    padding: 7.5% 12% !important;
+    width: 100%;
+}
+
+.content>.store>.store-container>h2 {
+    border-bottom: 0;
+}
+
+.store {
+    display: flex;
+    width: 100%;
+    flex: 1 1 auto;
+    column-gap: 70px;
+    justify-content: space-evenly;
+}
+
+.store>.store-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.store-container>.store-card {
+    width: 450px;
+    padding: 20px 45px;
+    border: 1px solid rgba(210, 210, 210, 1);
+    border-radius: 20px;
+}
+
+.store-container>.store-card>h3 {
+    font-size: 30px;
+    color: rgba(20, 54, 66, 1);
+    margin-top: 0;
+}
+
+/* .content>.store>.maps-container {} */
+
+.content>.store>.maps-container>iframe {
+    position: static;
+    margin-top: 9.2rem;
+    border-radius: 20px;
+}
