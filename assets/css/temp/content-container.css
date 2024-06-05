@@ -1,0 +1,9 @@
+.content {
+    width: 100% !important;
+    margin-block: 10rem;
+    margin-bottom: 6rem;
+    padding-inline: 7%;
+    padding-block: 0 !important;
+    align-items: unset;
+    gap: 20px !important;
+}
