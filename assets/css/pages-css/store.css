@@ -1,6 +1,11 @@
 .content {
-    padding: 7.5% 12% !important;
-    width: 100%;
+    width: 100% !important;
+    margin-block: 10rem;
+    margin-bottom: 6rem;
+    padding-inline: 8% !important;
+    padding-block: 0 !important;
+    align-items: unset;
+    gap: 20px;
 }
 
 .content>.store>.store-container>h2 {
@@ -9,10 +14,10 @@
 
 .store {
     display: flex;
-    width: 100%;
     flex: 1 1 auto;
-    column-gap: 70px;
-    justify-content: space-evenly;
+    width: 100%;
+    column-gap: 60px;
+    justify-content: center;
 }
 
 .store>.store-container {
@@ -34,10 +39,16 @@
     margin-top: 0;
 }
 
-/* .content>.store>.maps-container {} */
+.store>.maps-container {
+    display: flex;
+    width: 580px;
+    flex-direction: column;
+}
 
-.content>.store>.maps-container>iframe {
-    position: static;
+/* .content>.store>.maps-container {} */
+.store>.maps-container>iframe {
+    width: 100%;  
+    min-height: 580px;  
     margin-top: 9.2rem;
     border-radius: 20px;
 }

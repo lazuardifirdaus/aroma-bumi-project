@@ -1,47 +1,49 @@
 @media screen and (max-width: 600px) {
-    /* .content {
-        padding-left: 9% !important;
-        padding-right: 9% !important;
-    } */
-
-    .content {
-        margin-top: 15rem;
+    main>.content {
+        padding-left: 2.5rem !important;
+        padding-right: 2.5rem !important;
+        margin-top: 11rem;
+        margin-bottom: 4rem;
     }
 
-    .store>.maps-container {
-        display: flex;
+    .product>.product-info>h2 {
+        font-size: 36px;
+        margin-bottom: 10px;
+    }
+
+    .product>.product-info>p {
+        font-size: 20px;
+        text-align: left;
+        word-spacing: normal;
+    }
+
+    .product-info>span {
+        margin-top: 25px;
+        font-size: 48px;
+    }
+
+    .product-desc>h2 {
         width: 100%;
-        height: 100%;
-        align-items: center;
+        font-weight: 500 !important;
+        font-size: 36px;
     }
 
-    .store-container>h2 {
-        font-size: 26px;
-        
-        margin-top: 0;
-        margin-bottom: -20px;
-        padding: 0;
+    .product-desc>p {
+        font-size: 20px;
+        line-height: 2rem !important;
     }
 
-    .store-container>p {
-        font-size: 18px !important;
+    .button-back {
+        font-size: 17px !important;
+        width: 220px !important;
+        margin-top: 10px !important;
+        height: 50px !important;
     }
 
-    .store>.maps-container>iframe {
-        min-height: 0 !important;
-        height: 500px;
-        width: 500px;
-        margin-top: 0;
+    .content>button>.arrow-icon {
+        height: 1.5rem !important;
     }
 
-    .store-container>.store-card>h3 {
-        font-size: 20px !important;
-    }
-
-    .store-container>.store-card>p {
-        font-size: 16px !important;
-        line-height: 1.5rem;
-    }
 }
 
 @media screen and (max-width: 768px) {
@@ -78,22 +80,30 @@
         padding: 0;
     }
 
+    /* content media screen 768px */
+
     .content {
         margin-top: 15rem;
+        margin-bottom: 8rem;
     }
 
-    .store>.maps-container {
-        display: flex;
-        width: 100%;
-        height: 100%;
+    /* product media screen 768px */
+
+    .product {
+        flex-direction: column;
         align-items: center;
     }
 
-    .store>.maps-container>iframe {
-        min-height: 0 !important;
-        height: 500px;
-        width: 500px;
-        margin-top: 0;
+    .product>.product-image>img {
+        aspect-ratio: 4/3 !important;
+    }
+
+    .product-desc {
+        padding-left: 0 !important;
+    }
+
+    .button-back {
+        margin-left: 0 !important;
     }
 
     /* footer media screen 768px */
@@ -136,26 +146,29 @@
 }
 
 @media screen and (max-width: 1100px) {
-
-    .store {
-        flex-direction: column-reverse;
-        gap: 50px;
+    main>.content {
+        padding-inline: 10%;
     }
 
-    .store-container>.store-card {
-        width: 100%;
-    }
-
-    .store>.maps-container {
-        display: flex;
-        width: 100%;
-        height: 100%;
+    .product {
         flex-direction: column;
+        align-items: center;
     }
 
-    .store>.maps-container>iframe {
-        min-height: 800px;
-        margin-top: 0;
+    .product>.product-image>img {
+        aspect-ratio: 4/3;
+    }
+
+    .product-desc {
+        padding-left: 0 !important;
+    }
+
+    .product-desc>p {
+        padding-right: 0;
+    }
+
+    .button-back {
+        margin-left: 0 !important;
     }
 
     /* footer media screen 1100px */
@@ -183,9 +196,50 @@
     }
 }
 
-@media screen and (max-width: 1300px) {}
+@media screen and (max-width: 1300px) {
+
+    /* content media screen 1300px */
+    .content {
+        padding-inline: 5%;
+    }
+
+}
+
+@media screen and (min-width: 1600px) {
+
+    .product>.product-image>img {
+        width: 700px;
+        height: 550px;
+        aspect-ratio: 16/9 !important;
+    }
+
+    .product>.product-info>h2 {
+        font-size: 64px;
+        margin-bottom: 10px;
+    }
+
+    .product>.product-info>p {
+        font-size: 28px;
+        text-align: left;
+        word-spacing: normal;
+    }
+
+    .product-desc>h2 {
+        font-weight: 500 !important;
+        font-size: 56px;
+    }
+
+    .product-desc>p {
+        font-size: 28px;
+    }
+}
 
 @media screen and (min-width: 1800px) {
+
+    .content {
+        margin-top: 12rem;
+        margin-bottom: 7rem;
+    }
 
     /* navbar media screen 1800px */
     .navbar-container {

@@ -1,17 +1,22 @@
 .content {
     width: 100% !important;
-    padding: 7.5% 10% !important;
+    margin-block: 10rem;
+    margin-bottom: 6rem;
+    padding-inline: 7%;
+    padding-block: 0 !important;
     align-items: unset;
-    gap: 30px !important;
+    gap: 20px !important;
 }
 
 .product {
     display: flex;
-    gap: 20px;
+    width: 100%;
+    gap: 10px;
 }
 
 .product>.product-info {
     display: flex;
+    width: 100%;
     flex-direction: column;
     margin-top: 2rem;
 }
@@ -31,7 +36,8 @@
 }
 
 .product>.product-image>img {
-    max-width: 600px;
+    max-width: 700px;
+    aspect-ratio: 4/3;
 }
 
 .product-info>span {
@@ -46,12 +52,16 @@
 }
 
 .product-desc>h2 {
+    width: 40%;
     font-weight: 500 !important;
     font-size: 48px;
 }
 
 .product-desc>p {
+    text-align: justify;
+    font-size: 24px;
     line-height: 3rem !important;
+    padding-right: 80px;
 }
 
 .button-back {
