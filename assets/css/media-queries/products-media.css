@@ -1,3 +1,33 @@
+@import url("../keyframes-product.css");
+
+@media screen and (max-width: 570px) {
+    .product-container>.product>img {
+        animation: moveOrigin-image-570px 400ms ease-in;
+        animation-fill-mode: both;
+    }
+
+    .product-container>.product>h4 {
+        animation: moveOrigin-text-570px 400ms ease-in-out;
+        animation-fill-mode: both;
+    }
+
+    .product-container>.product>p {
+        animation: moveOrigin-text-570px 400ms ease-in-out;
+        animation-fill-mode: both;
+    }
+
+    .product:hover img {
+        animation: moveTop-image-570px 400ms ease-in-out;
+        animation-fill-mode: both;
+    }
+
+    .product:hover h4,
+    .product:hover p {
+        animation: moveBottom-text-570px 400ms ease-in-out;
+        animation-fill-mode: both;
+    }
+}
+
 @media screen and (max-width: 768px) {
 
     /* navbar media screen 768px*/
@@ -72,6 +102,32 @@
         font-size: 3.5vw;
     }
 
+    .product-container>.product>img {
+        animation: moveOrigin-image-768px 400ms ease-in;
+        animation-fill-mode: both;
+    }
+
+    .product-container>.product>h4 {
+        animation: moveOrigin-text-768px 400ms ease-in-out;
+        animation-fill-mode: both;
+    }
+
+    .product-container>.product>p {
+        animation: moveOrigin-text-768px 400ms ease-in-out;
+        animation-fill-mode: both;
+    }
+
+    .product:hover img {
+        animation: moveTop-image-768px 400ms ease-in-out;
+        animation-fill-mode: both;
+    }
+
+    .product:hover h4,
+    .product:hover p {
+        animation: moveBottom-text-768px 400ms ease-in-out;
+        animation-fill-mode: both;
+    }
+
     /* footer media screen 768px */
     footer {
         flex-direction: column;
@@ -133,12 +189,41 @@
     }
 }
 
+@media screen and (max-width: 1000px) {
+    .product-container>.product>img {
+        animation: moveOrigin-image-1000px 400ms ease-in !important;
+        animation-fill-mode: both !important;
+    }
+
+    .product-container>.product>h4 {
+        animation: moveOrigin-text-1000px 400ms ease-in-out !important;
+        animation-fill-mode: both !important;
+    }
+
+    .product-container>.product>p {
+        animation: moveOrigin-text-1000px 400ms ease-in-out !important;
+        animation-fill-mode: both !important;
+    }
+
+    .product:hover img {
+        animation: moveTop-image-1000px 400ms ease-in-out !important;
+        animation-fill-mode: both !important;
+    }
+
+    .product:hover h4,
+    .product:hover p {
+        animation: moveBottom-text-1000px 400ms ease-in-out !important;
+        animation-fill-mode: both !important;
+    }
+}
+
 @media screen and (max-width: 1100px) {
 
     /* footer media screen 1100px */
     footer {
         flex-direction: column;
         gap: 1rem;
+        height: 100%;
 
         padding-left: 50px;
         padding-top: 10px;
@@ -157,6 +242,40 @@
 
     footer>.footer-menu {
         padding: 0 10px 0 10px;
+    }
+}
+
+@media screen and (min-width: 1101px) {
+    footer {
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .product-container>.product>img {
+        animation: moveOrigin-image-1200px 400ms ease-in;
+        animation-fill-mode: both;
+    }
+
+    .product-container>.product>h4 {
+        animation: moveOrigin-text-1200px 400ms ease-in-out;
+        animation-fill-mode: both;
+    }
+
+    .product-container>.product>p {
+        animation: moveOrigin-text-1200px 400ms ease-in-out;
+        animation-fill-mode: both;
+    }
+
+    .product:hover img {
+        animation: moveTop-image-1200px 400ms ease-in-out;
+        animation-fill-mode: both;
+    }
+
+    .product:hover h4,
+    .product:hover p {
+        animation: moveBottom-text-1200px 400ms ease-in-out;
+        animation-fill-mode: both;
     }
 }
 
@@ -179,6 +298,8 @@
     .content {
         padding: 7.5% 15%;
     }
+
+
 }
 
 @media screen and (min-width: 1440px) {

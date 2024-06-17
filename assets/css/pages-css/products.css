@@ -1,3 +1,5 @@
+@import url("../keyframes-product.css");
+
 .content>.title {
     display: flex;
     width: 100%;
@@ -45,6 +47,7 @@ main>.content {
     background-repeat: no-repeat;
 
     border-radius: 20px;
+
 }
 
 .product-container>.product>img {
@@ -55,6 +58,8 @@ main>.content {
     align-self: center;
     aspect-ratio: 1/1;
     /* height: 139.5px; */
+    animation: moveOrigin-img 400ms ease-in;
+    animation-fill-mode: both;
 }
 
 .product-container>.product>h4 {
@@ -64,6 +69,8 @@ main>.content {
     font-size: 20px;
 
     color: #F9FBFE;
+    animation: moveOrigin-text 400ms ease-in-out;
+    animation-fill-mode: both;
 }
 
 .product-container>.product>p {
@@ -71,4 +78,17 @@ main>.content {
     font-size: 18px;
 
     color: #F9FBFE;
+    animation: moveOrigin-text 400ms ease-in-out;
+    animation-fill-mode: both;
+}
+
+.product:hover img {
+    animation: moveTop-image 400ms ease-in-out;
+    animation-fill-mode: both;
+}
+
+.product:hover h4,
+.product:hover p {
+    animation: moveBottom-text 400ms ease-in-out;
+    animation-fill-mode: both;
 }

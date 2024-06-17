@@ -29,8 +29,8 @@
 
     .store>.maps-container>iframe {
         min-height: 0 !important;
-        height: 500px;
-        width: 500px;
+        height: 450px !important;
+        width: 400px !important;
         margin-top: 0;
     }
 
