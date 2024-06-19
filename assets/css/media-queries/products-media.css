@@ -245,12 +245,6 @@
     }
 }
 
-@media screen and (min-width: 1101px) {
-    footer {
-        height: 100%;
-    }
-}
-
 @media screen and (max-width: 1200px) {
     .product-container>.product>img {
         animation: moveOrigin-image-1200px 400ms ease-in;

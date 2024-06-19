@@ -310,6 +310,9 @@ footer {
     background-color: rgba(20, 54, 66, 1);
     display: flex;
     gap: 8rem;
+    position: sticky;
+    top: 100vh;
+    width: 100%;
 
     padding-left: 80px;
     padding-top: 10px;
